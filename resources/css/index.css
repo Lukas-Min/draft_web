@@ -1,0 +1,32 @@
+/* font-family: 'Merriweather', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    font-family: 'Open Sans', sans-serif;
+}
+.tagline{
+    font-family: 'Merriweather', serif;
+}
+.nav-btn:hover{
+    background-color:gray;
+    color: white;
+}
+.bg-warning, .btn-warning{
+    background-color: #FFCA3C !important;
+}
+.nav-btn:hover{
+    background-color: #FFFBEF !important;
+    color: #201F1D !important;
+}
+#navbar{
+    /* height: 214px;   */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(../img/header.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: #FFFBEF solid 10px;
+}

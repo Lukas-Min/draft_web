@@ -30,3 +30,6 @@ font-family: 'Poppins', sans-serif; */
     background-repeat: no-repeat;
     border-bottom: #FFFBEF solid 10px;
 }
+#book-now:hover{
+    background-color: rgb(252, 217, 123) !important;
+}

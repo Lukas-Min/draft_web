@@ -141,18 +141,26 @@ footer {
     display: inline-flex !important;
     align-items: center !important;
 }
-.form-select{
+.form-location{
     background-color: transparent;
     border: none;
 }
-.form-select:focus{
+.form-location:focus{
     background-color: transparent;
     border: none !important;
-    box-shadow: 0 0 0 0.15rem rgba(255, 251, 240, 0.603) !important; /* This adds a subtle box shadow */
+    box-shadow: 0 0 0 0.15rem rgba(255, 251, 240, 0.603) !important;
 }
-.form-select{
+.form-location{
     --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgb(255, 255, 255)' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
 }
 .location{
     display: none;
+}
+.rent-input:hover{
+    border: solid #201F1D 1px;
+    box-shadow: 0 0 0 0.15rem rgba(255, 251, 240, 0.603) !important;
+}
+.rent-input:focus{
+    border: solid #201F1D 1px;
+    box-shadow: 0 0 0 0.15rem rgba(255, 251, 240, 0.603) !important;
 }

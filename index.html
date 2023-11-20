@@ -2,47 +2,226 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap demo</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&family=Poppins:ital,wght@0,200;0,300;0,400;0,800;1,400&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="resources/css/index.css" />
+    rel="stylesheet">
+  <link rel="stylesheet" href="resources/css/index.css">
+  <link rel="stylesheet" href="resources/css/font.css">
 </head>
 
 <body class="bg-warning">
-  <nav class="navbar navbar-expand-md" id="navbar">
+  <!-- Navigation Bar  -->
+  <nav class="navbar navbar-expand-lg" id="navbar">
     <div class="container">
-      <a class="navbar-brand text-light" href="#"><img src="resources/img/LAP TRIP_LOGO PNG FINAL.png" alt="" style="height: 100px"></a>
-      <button class="bg-light navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      <a class="" href="#">
+        <img src="resources/img/LAP TRIP_LOGO NO RENTALS.png" alt="" style="height: 125px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ms-md-auto pe-5">
-          <a class="btn m-2 rounded nav-btn text-light" href="">Home</a>
-          <a class="btn m-2 rounded nav-btn text-light" href="">Apply as Operator</a>
-          <a class="btn m-2 rounded nav-btn text-light" href="">About Us</a>
-          <a class="btn m-2 rounded nav-btn text-light" href="">Contact Us</a>
-          <a class="btn btn-warning m-2 rounded" id="book-now">Book Now</a>
+      <!-- Navigation List -->
+      <div class="collapse navbar-collapse mt-2" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-md-auto">
+          <a class="btn m-2 nav-btn text-light nav-list title3" href="">Home</a>
+          <a class="btn m-2 nav-btn text-light nav-list title3" href="">About Us</a>
+          <a class="btn m-2 nav-btn text-light nav-list title3" href="">Contact</a>
+          <a class="btn m-2 nav-btn text-light nav-list title3" href="">Sign In</a>
+          <a class="btn m-2 nav-btn text-light nav-list title3" id="book-now">Book Now</a>
         </div>
       </div>
     </div>
   </nav>
+  
   <section>
     <div class="container">
-      <div class="row">
-        <div class="">
-          
+      <!-- Title Page  -->
+      <div class="row body">
+        <div>
+          <strong class="car-title title1 poppins-font">Hyundai Tucson 2023</strong>
         </div>
       </div>
-    </div>
+      <!-- Body -->
+      <div class="row mt-4">
+        <!-- Left Body Division -->
+        <div class="col-md-8">
+          <!-- Vehicle Image -->
+          <img class="car-display" src="resources/img/Hyundai-Tucson.jpg" alt="">
+          <!-- Specification Container  -->
+          <div class="bg-light mt-3 rounded-bottom rounded-top">
+            <div class="bg-dark rounded-top p-2 ps-3">
+              <strong class="text-white title3">Specification</strong>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-6 col-md-3 p-2 ps-5">
+                  <div class=""><img src="resources/img/BRAND_ICON.svg" alt=""><strong
+                      class="ps-2 pt-2">Hyundai</strong></div>
+                </div>
+                <div class="col-6 col-md-3 p-2 ps-5">
+                  <div class=""><img src="resources/img/TRANSMISSION_ICON.svg" alt=""><strong
+                      class="ps-2 pt-2">Automatic</strong></div>
+                </div>
+                <div class="col-6 col-md-3 p-2 ps-5">
+                  <div class=""><img src="resources/img/MILLAGE_ICON.svg" alt=""><strong
+                      class="ps-2 pt-2">12,000km</strong></div>
+                </div>
+                <div class="col-6 col-md-3 p-2 ps-5">
+                  <div class=""><img src="resources/img/YEAR_MODEL_ICON.svg" alt=""><strong
+                      class="ps-2 pt-2">2023</strong></div>
+                </div>
+                <div class="col-6 col-md-3 p-2 ps-5">
+                  <div class=""><img src="resources/img/FUEL_TYPE_ICON.svg" alt=""><strong
+                      class="ps-2 pt-2">Diesel</strong></div>
+                </div>
+                <div class="col-6 col-md-3 p-2 ps-5">
+                  <div class=""><img src="resources/img/BODY_TYPE_ICON.svg" alt=""><strong
+                      class="ps-2 pt-2">SUV</strong></div>
+                </div>
+                <div class="col-6 col-md-3 p-2 ps-5">
+                  <div class=""><img src="resources/img/COLOR_ICON.png" alt=""><strong class="ps-2 pt-2">Maroon</strong>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3 p-2 ps-5">
+                  <div class=""><img src="resources/img/PLATE_ICON.png" alt=""><strong class="ps-2 pt-2">ABC
+                      1234</strong></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Listing Description Container  -->
+          <div class="bg-light mt-3 rounded-bottom rounded-top">
+            <div class="bg-dark rounded-top p-2 ps-3">
+              <strong class="text-white title3">Description of Listing</strong>
+            </div>
+            <div class="rounded-bottom p-2 ps-4 pe-4">
+              <div class="row">
+                <div class="col-md-6">
+                  <strong>Coding Day</strong>
+                </div>
+                <div class="col-md-6 text-end">
+                  <span>Tuesday</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Body Division -->
+        <div class="col-md-4">
+          <div class="bg-light mt-3 rounded-bottom rounded-top">
+            <div class="bg-dark rounded-top p-2 ps-3">
+              <div class="row">
+                <form class="mt-2 form-group gap-1" action="" method="POST">
+                  <label class="title3 text-light label-destination" for="destination">Destination:</label>
+                  <div class="destination col-md-5">
+                    <select class="form-select text-light form-destination" aria-label="Default select example"
+                      name="destination">
+                      <option class="text-dark location" selected disabled>Location</option>
+                      <option class="text-dark" value="1">Taguig City</option>
+                      <option class="text-dark" value="2">Marikina City</option>
+                      <option class="text-dark" value="3">Tagaytay</option>
+                    </select>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row ms-2 me-2 text-center flex-row">
+                <div class="col-6 col-md-4 p-2">
+                  <div class="">
+                    <strong class="ps-2 pt-2">Pick Up Date</strong>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 p-2">
+                  <div class="">
+                    <strong class="ps-2 pt-2">Pick Up Time</strong>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 p-2">
+                  <div class="">
+                    <strong class="ps-2 pt-2">Duration</strong>
+                  </div>
+                </div>
+                <hr>
+                <div class="col-6 col-md-4 pb-2">
+                  <div class="">
+                    <strong class="ps-2 pt-2">2023</strong>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 pb-2">
+                  <div class="">
+                    <strong class="ps-2 pt-2">Diesel</strong>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 pb-2">
+                  <div class="">
+                    <strong class="ps-2 pt-2">SUV</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Total Fee Breakdown  -->
+          <div class="bg-light mt-3 rounded-bottom rounded-top">
+            <div class="bg-dark rounded-top p-2 ps-3">
+              <strong class="text-white title3">Description of Listing</strong>
+            </div>
+            <div class="rounded-bottom p-2 ps-4 pe-4">
+              <div class="row">
+                <div class="col-md-6">
+                  <strong>Coding Day</strong>
+                </div>
+                <div class="col-md-6 text-end">
+                  <span>Tuesday</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
   </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light p-5 align-self-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="">
+            <b class="title2 merri-font">About Us</b>
+          </div>
+          <div class="">
+
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="">
+            <b class="title2 merri-font">About Us</b>
+          </div>
+          <div class="">
+
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="">
+            <b class="title2 merri-font">About Us</b>
+          </div>
+          <div class="">
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

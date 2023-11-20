@@ -1,0 +1,25 @@
+/* font-family: 'Merriweather', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+.title1{
+    font-size: 38px;
+    font-weight: bold !important;
+}
+.title2{
+    font-size: 24px;
+    font-style: bold !important;
+}
+.title3{
+    font-weight: bold !important;
+}
+.merri-font{
+    font-family: 'Merriweather', serif;
+}
+.poppins-font{
+    font-family: Poppins;
+}

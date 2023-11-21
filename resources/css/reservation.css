@@ -5,11 +5,6 @@
     text-rendering: optimizeSpeed;
 }
 
-.nav-btn:hover {
-    background-color: gray;
-    color: white;
-}
-
 .text-light {
     color: #FFFBEF !important;
 }
@@ -18,24 +13,22 @@
     color: #201F1D !important;
 }
 
-.bg-light,
-.btn-light {
+.bg-light {
     background-color: #FFFBEF !important;
 }
 
-.bg-dark,
-.btn-dark {
+.bg-dark {
     background-color: #201F1D !important;
 }
 
-.bg-warning,
-.btn-warning {
+.bg-warning {
     background-color: #FFCA3C !important;
 }
 
 .nav-btn:hover {
     background-color: #FFFBEF !important;
     color: #201F1D !important;
+    transition: all 0.5s ease !important;
 }
 
 #navbar {
@@ -47,12 +40,15 @@
     border-bottom: #FFFBEF solid 10px;
     padding: 15px;
 }
-#book-now{
+
+#book-now {
     background-color: #FFCA3C !important;
     color: #201F1D !important;
 }
+
 #book-now:hover {
     background-color: rgb(252, 217, 123) !important;
+    transition: all 0.5s ease !important;
 }
 
 body {
@@ -93,12 +89,12 @@ body {
 }
 
 .navbar {
-    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(255, 251, 240)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' fill='none' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(255, 251, 240)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4' fill='none' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .navbar-toggler-icon:hover {
-    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(255, 255, 255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4' fill='none' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(255, 255, 255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='5' fill='none' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    transition: all 0.5s ease !important;
 }
 
 .navbar-toggler {
@@ -137,30 +133,105 @@ body {
 footer {
     margin-top: 100px !important;
 }
-.form-group{
+
+.form-group {
     display: inline-flex !important;
     align-items: center !important;
 }
-.form-location{
+
+.form-location {
     background-color: transparent;
     border: none;
 }
-.form-location:focus{
+
+.form-location:focus {
     background-color: transparent;
     border: none !important;
     box-shadow: 0 0 0 0.15rem rgba(255, 251, 240, 0.603) !important;
 }
-.form-location{
+
+.form-location {
     --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgb(255, 255, 255)' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
 }
-.location{
+
+.location {
     display: none;
 }
-.rent-input:hover{
+
+.rent-input:hover {
+    border: solid #201F1D 1px;
+    box-shadow: 0 0 0 0.15rem rgba(255, 251, 240, 0.603) !important;
+    transition: all 0.5s ease !important;
+}
+
+.rent-input:focus {
     border: solid #201F1D 1px;
     box-shadow: 0 0 0 0.15rem rgba(255, 251, 240, 0.603) !important;
 }
-.rent-input:focus{
-    border: solid #201F1D 1px;
-    box-shadow: 0 0 0 0.15rem rgba(255, 251, 240, 0.603) !important;
+
+.proceed-btn {
+    background-color: #201f1d !important;
 }
+
+.proceed-btn:hover {
+    background-color: #201f1de1 !important;
+    transition: all 0.5s ease !important;
+}
+
+/* Start of Footer Section */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.title-container {
+    border-bottom: 3px solid #FFFBEF;
+}
+
+.social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 20%;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.social-links a:hover {
+    color: #24262b;
+    background-color: #fff;
+}
+.hr-total{
+    margin-right: 22px;
+    margin-left: 22px;
+}
+.hr-book-info{
+    margin-bottom: 5px;
+}
+
+ul {
+    list-style: none;
+
+    padding: 0;
+}
+
+ul li {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+/* End Footer Section  */

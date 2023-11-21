@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,12 +9,17 @@
     text-rendering: optimizeSpeed;
 }
 
+/* start back to top button  */
+
+
+/* End back to top button  */
+
 .text-light {
     color: #FFFBEF !important;
 }
 
 .text-dark {
-    color: #201F1D !important;
+    color: #303030 !important;
 }
 
 .bg-light {
@@ -18,7 +27,7 @@
 }
 
 .bg-dark {
-    background-color: #201F1D !important;
+    background-color: #303030 !important;
 }
 
 .bg-warning {
@@ -27,7 +36,7 @@
 
 .nav-btn:hover {
     background-color: #FFFBEF !important;
-    color: #201F1D !important;
+    color: #303030 !important;
     transition: all 0.5s ease !important;
 }
 
@@ -43,7 +52,7 @@
 
 #book-now {
     background-color: #FFCA3C !important;
-    color: #201F1D !important;
+    color: #303030 !important;
 }
 
 #book-now:hover {
@@ -65,7 +74,7 @@ body {
 }
 
 .car-title {
-    color: #201F1D;
+    color: #303030;
     text-align: center;
     line-height: 43.7px;
     text-transform: uppercase;
@@ -159,22 +168,22 @@ footer {
 }
 
 .rent-input:hover {
-    border: solid #201F1D 1px;
+    border: solid #303030 1px;
     box-shadow: 0 0 0 0.15rem rgba(255, 251, 240, 0.603) !important;
     transition: all 0.5s ease !important;
 }
 
 .rent-input:focus {
-    border: solid #201F1D 1px;
+    border: solid #303030 1px;
     box-shadow: 0 0 0 0.15rem rgba(255, 251, 240, 0.603) !important;
 }
 
 .proceed-btn {
-    background-color: #201f1d !important;
+    background-color: #303030 !important;
 }
 
 .proceed-btn:hover {
-    background-color: #201f1de1 !important;
+    background-color: #303030e1 !important;
     transition: all 0.5s ease !important;
 }
 
@@ -207,11 +216,13 @@ footer {
     color: #24262b;
     background-color: #fff;
 }
-.hr-total{
+
+.hr-total {
     margin-right: 22px;
     margin-left: 22px;
 }
-.hr-book-info{
+
+.hr-book-info {
     margin-bottom: 5px;
 }
 
@@ -231,7 +242,26 @@ a {
     color: inherit;
 }
 
+.hover-underline>a {
+    display: inline-block;
+    position: relative;
 
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 0;
+        bottom: 0;
+        height: 2px;
+        margin: -5px 0;
+        left: 0;
+        background-color: white;
+        transition: all 0.4s ease-in 0s;
+    }
 
+    &:hover:after {
+        width: 100%;
+    }
+}
 
 /* End Footer Section  */
